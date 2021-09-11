@@ -6,7 +6,7 @@ if(theme === null || theme === null) {
     theme = localStorage.getItem('theme');
 }
 
-document.body.className = theme;
+document.body.className = `${theme}`;
 
 if(theme === 'light-theme') {
     toggleCheckbox.checked = false;
@@ -14,7 +14,6 @@ if(theme === 'light-theme') {
 else {
     toggleCheckbox.checked = true;
 }
-
 
 toggleCheckbox.addEventListener('click', (e) => {
     if(e.target.checked) {
@@ -28,5 +27,5 @@ toggleCheckbox.addEventListener('click', (e) => {
     }
 
     theme = localStorage.getItem('theme');
-    document.body.className = theme;
+    document.body.className = `${theme}`;
 });
