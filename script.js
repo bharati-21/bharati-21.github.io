@@ -1,37 +1,32 @@
-/*$('.nav-link').click(function (e) {
-    $('.nav-link').removeClass('current_page_item');
-    $(this).addClass('current_page_item');
+const toggleCheckbox = document.querySelector('.theme-toggle');
+
+let theme = localStorage.getItem('theme');
+if(theme === null || theme === null) {
+    localStorage.setItem('theme', 'light-theme');
+    theme = localStorage.getItem('theme');
+}
+
+document.body.className = theme;
+
+if(theme === 'light-theme') {
+    toggleCheckbox.checked = false;
+}
+else {
+    toggleCheckbox.checked = true;
+}
+
+
+toggleCheckbox.addEventListener('click', (e) => {
+    if(e.target.checked) {
+        console.log('checked');
+        localStorage.setItem('theme', 'dark-theme');
+        
+    }
+    else {
+        console.log('unchecked');
+        localStorage.setItem('theme', 'light-theme')
+    }
+
+    theme = localStorage.getItem('theme');
+    document.body.className = theme;
 });
-*/
-
-
-$(document).ready(() => {
-
-
-    var i = 0;
-    var w = window.matchMedia("(min-width: 768px)");
-    var txt = 'Hello there, I am Bharati. Welcome to my space!';
-    var speed = 50;
-    function typeWriter() {
-        if (i < txt.length) {
-            document.getElementById("intro-head").innerHTML += txt.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed);
-        }
-        else {
-            rep(w);
-            w.addListener(rep);
-        }
-    }
-    function rep(w) {
-        if (w.matches) {
-            setTimeout(function () {
-                i = 0;
-                speed = 40;
-                document.getElementById("intro-head").innerHTML = '';
-                setTimeout(typeWriter, speed);
-            }, 5000);
-        }
-    }
-    typeWriter();
-})
