@@ -404,6 +404,95 @@ body.dark-theme .showcase-lead {
     object-fit: cover;
 }
 
+.skill-list-container > .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-list-container .skill-list li.skill-list-item {
+    margin: 1.25rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-list-container .skill-list li.skill-list-item span.skill-icon {
+    display: block;
+    width: 100px; 
+    height: 100px;
+    padding: 1rem;
+
+    font-size: 3.5rem;
+    text-align: center;
+    
+    border: 2px solid var(--light-theme-primary-color);
+    border-radius: 50%;
+    
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.5s ease-in-out;    
+}
+
+.skill-list-container .skill-list li.skill-list-item span.skill-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    display: block;
+    font-weight: 700;
+    transition: 0.4s ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+body.light-theme .skill-list-container .skill-list li.skill-list-item span.skill-icon{ 
+    box-shadow: 0px 0px 4px var(--dark-theme-bg-color);
+}
+
+body.dark-theme .skill-list-container .skill-list li.skill-list-item span.skill-icon{ 
+    box-shadow: 0px 0px 4px var(--light-theme-bg-color)
+}
+
+.skill-list-container .skill-list li.skill-list-item span.skill-icon:hover { 
+    transform: scale(0.9);
+}
+
+.skill-list-container .skill-list li.skill-list-item span.skill-icon:hover +  span.skill-title { 
+    transform: scale(1.2);
+}
+
+
+body.light-theme .skill-list-container .skill-list li.skill-list-item span.skill-icon:hover { 
+    background-color: var(--light-theme-secondary-color);
+    color: var(--light-theme-bg-color);
+}
+
+body.dark-theme .skill-list-container .skill-list li.skill-list-item span.skill-icon:hover { 
+    background-color: var(--dark-theme-secondary-color);
+    color: var(--dark-theme-bg-color);
+}
+
+
+.skill-list-container .skill-list li.skill-list-item span.skill-icon:hover {
+    animation-name: rotate; 
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) scale(0.9);
+        
+    }
+}
+
+
+
+
 
 @media screen and (max-width: 700px) {
     .flex-container {
@@ -426,7 +515,7 @@ body.dark-theme .showcase-lead {
         font-size: 0.8;
     }
 
-    .hero-container.container, .about.container {
+    .hero-container.container, .about.container, .skills.container {
         padding: 1rem 0.1rem;
     }
     
