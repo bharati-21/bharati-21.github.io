@@ -200,6 +200,19 @@ body.dark-theme nav.nav ul.nav-links li a:hover  {
     color:var(--dark-theme-primary-color);
 }
 
+
+body.light-theme .inverted-bg-color {
+    background-color: var(--dark-theme-bg-color);
+    color: var(--dark-theme-primary-color);
+}
+
+body.dark-theme .inverted-bg-color {
+    background-color: var(--light-theme-bg-color);
+    color: var(--light-theme-primary-color);
+}
+
+
+
 .theme-toggler {
     position: relative;
     display: inline-block;
@@ -524,6 +537,20 @@ body.dark-theme .skill-list-container .skill-list li.skill-list-item span.skill-
     line-height: 1.5;
     word-spacing: 5px;
     margin-top: 2rem;
+}
+
+.projects.container .card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.projects.container .card {
+    padding: 1rem;
+
 }
 
 
