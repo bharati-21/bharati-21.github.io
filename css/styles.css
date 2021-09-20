@@ -49,7 +49,7 @@ body.light-theme {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 960px;
     margin: auto;
     padding: 1rem;
 }
@@ -211,6 +211,16 @@ body.dark-theme .inverted-bg-color {
     color: var(--light-theme-primary-color);
 }
 
+
+body.light-theme .bg-color {
+    background-color: var(--light-theme-secondary-color);
+    color: var(--dark-theme-primary-color);
+}
+
+body.dark-theme .bg-color {
+    background-color: var(--dark-theme-secondary-color);
+    color: var(--light-theme-primary-color)
+}
 
 
 .theme-toggler {
@@ -539,18 +549,96 @@ body.dark-theme .skill-list-container .skill-list li.skill-list-item span.skill-
     margin-top: 2rem;
 }
 
+.projects.container .section-lead {
+    margin: 1rem 0;
+}
+
 .projects.container .card-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     margin: 1rem 0;
 }
 
 .projects.container .card {
-    padding: 1rem;
+    flex:1 ;
+    margin: 1rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    
+}
 
+.projects.container .card:hover {
+    transform: translateY(-10px) rotate(1deg) scale(1.05);
+    box-shadow: 10px 10px 15px -1px rgb(0 0 0 / 21%);
+        
+}
+
+.projects.container .card .card-footer {
+    border-radius: 0 0 0.5rem 0.5rem;
+    font-weight: 500;
+}
+
+.projects.container .card .card-header {
+    border-radius: 0.5rem 0.5rem 0 0;
+    height: 100%;
+    
+}
+
+.projects.container .card .card-header .card-heading {
+    display: flex;
+    padding: 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.projects.container .card .card-header .card-heading small.project-links i {
+    margin: 0 0.25rem;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+
+.projects.container .card  .card-header h3.card-head {
+    text-align: center;
+    margin-left: 0.25rem;
+}
+
+.projects.container .card .card-header .project-img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.projects.container .card .card-main p.card-lead {
+    padding: 1rem;
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+
+
+.projects.container .card .card-footer small.project-tech
+{
+    
+    padding: 1rem;
+    display: block;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .projects.container .card-container {
+        flex-wrap: wrap;
+    }
 }
 
 
