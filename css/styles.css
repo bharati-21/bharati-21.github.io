@@ -2,6 +2,7 @@
     margin : 0;
     padding : 0;
     box-sizing : border-box;
+    scroll-behavior: smooth;
 }
 
 html, body {
@@ -216,11 +217,11 @@ html, body {
     color : #DB4437;
 }
 
-.fa-google:hover, .google:hover, .github:hover, .fa-github:hover {
-    opacity: 0.8 !important;
+.connect .fa-google:hover, .connect .google:hover, .connect .github:hover, .connect .fa-github:hover {
+    opacity: 0.8;
 }
 
-.fa-linkedin-in:hover, .linkedin:hover, .twitter:hover, .fa-twitter:hover, .fa-facebook:hover, .facebook:hover {
+.connect .fa-linkedin-in:hover, .connect .linkedin:hover, .connect .twitter:hover, .connect .fa-twitter:hover, .connect .fa-dev:hover, .dev:hover {
     opacity: 0.8 !important;
 }
 
@@ -244,12 +245,11 @@ html, body {
     margin : 1%;
 }
 
-.fa-facebook {
-    color : #3b5998;
+.fa-dev {
+    color : #fff;
 }
 
-.facebook {
-    
+.dev-to {
     border: 1px solid rgb(180, 174, 174);
     padding : 1%;
     margin: 1%;
@@ -287,31 +287,116 @@ html, body {
     border-bottom : 5px groove #f2f4f7;
     box-shadow : 0 3px #e43f5a;
     padding-bottom: 100px;
+    color: #f1ebbb;
 }
 
-.progress {
-    height: 20px;
-    border-radius : 30px;
+.skills ul {
+    list-style: none;
 }
 
-.skill-progress {
-    padding: 5% 5% 2% 5%;
+.skill-list-container > .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.progress-percentage {
-    float: right;
+.skill-list-container .skill-list li.skill-list-item {
+    margin: 1.25rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.skillbar-container {
-    margin-bottom: 10%;
+.skill-list-container .skill-list li.skill-list-item span.skill-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    padding: 1rem;
+    font-size: 3.5rem;
+    text-align: center;
+    border: 2px solid #f1ebbb;
+    border-radius: 50%;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.5s ease-in-out;
+    -webkit-transition: background 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.5s ease-in-out;
+    -moz-transition: background 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.5s ease-in-out;
+    -ms-transition: background 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.5s ease-in-out;
+    -o-transition: background 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.5s ease-in-out;
 }
 
+.skill-list-container .skill-list li.skill-list-item span.skill-icon i {
+    color: #fff;
+}
+
+.skill-list-container .skill-list li.skill-list-item span.skill-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    display: block;
+    font-weight: 700;
+    transition: 0.4s ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.skill-list-container .skill-list li.skill-list-item span.skill-icon:hover { 
+    transform: scale(0.9);
+}
+
+.skill-list-container .skill-list li.skill-list-item span.skill-icon:hover +  span.skill-title { 
+    transform: scale(1.2);
+}
+
+
+.skill-list-container .skill-list li.skill-list-item span.skill-icon:hover { 
+    background-color: #d7ecf3;
+    color: #0e0220;
+}
+
+.skill-list-container .skill-list li.skill-list-item span.skill-icon:hover i{ 
+    color: #0e0220;
+}
+
+
+.skill-list-container .skill-list li.skill-list-item span.skill-icon:hover {
+    animation-name: rotate; 
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) scale(0.9);
+        
+    }
+}
+
+
+.skills-others {
+    text-align: justify;
+    line-height: 1.5;
+    word-spacing: 5px;
+    margin-top: 2rem;
+}
+
+.skills-others .invert-secondary-color {
+    color:#f0ad4e;
+}
 
 /* SKILLS DIV ENDS HERE */
 
 /* PORTFOLIO DIV BEGINS HERE */
 
-.portfolio {
+.projects {
     background-color : #33030d;
     border-bottom: 5px  groove #f1ebbb;
     padding-top: 100px;
@@ -319,11 +404,11 @@ html, body {
     letter-spacing: 5px;
 }
 
-#portfolio {
+#projects {
     box-shadow : 0 3px #e40475;
 }
 
-.port-head {
+.projects-head {
     color: #efbfc6;
     font-family: 'Montaga', serif;
     font-size: 48px;
@@ -633,13 +718,14 @@ html, body {
     cursive;
     color : #f1ebbb;
     font-size: 48px;
-    margin: 100px 0 80px 0;
+    margin: 5rem auto 1rem auto;
 }
 
 .contact-me-container h1 {
     color : #ffce00;
     font-size: 42px;
-    margin : 50px 0 20px 0;
+    padding-bottom: 1rem;
+    margin : 1rem auto;
 }
 
 .contact-me-container h2 {
@@ -682,12 +768,12 @@ html, body {
     color : #e40475;
 }
 
-.contact-connect {
+/* .contact-connect {
     border-top : 2px solid #dc3545;
-}
+} */
 
 .contact-connect .github,
-.contact-connect .facebook ,
+.contact-connect .dev-to ,
 .contact-connect .linkedin,
 .contact-connect .twitter {
     margin : 10px;
