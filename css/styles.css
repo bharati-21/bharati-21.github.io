@@ -431,6 +431,44 @@ html, body {
     text-align: center;
 }
 
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-links a i.fa-github-square {
+    font-size: 1.6rem;
+}
+
+.project-links a i{
+    font-size: 1.4rem;
+    margin: 1rem 0.25rem;
+}
+
+
+.project-links a {
+    transition: transform 0.1s ease-in-out;
+    -webkit-transition: transform 0.1s ease-in-out;
+    -moz-transition: transform 0.1s ease-in-out;
+    -ms-transition: transform 0.1s ease-in-out;
+    -o-transition: transform 0.1s ease-in-out;
+}
+
+.project-links a:hover {
+    opacity: 1 !important;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.project-links a:hover > i{
+    color: #000;
+}
+
 /* PORTFOLIO DIV ENDS HERE */
 
 /* EDUCATION DIV STARTS HERE */
