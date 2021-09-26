@@ -1,37 +1,31 @@
-/*$('.nav-link').click(function (e) {
-    $('.nav-link').removeClass('current_page_item');
-    $(this).addClass('current_page_item');
-});
-*/
+const introHead = document.querySelector('.intro-head');
+document.addEventListener('DOMContentLoaded', loadIntroHead);
 
+let i = 0;
+const introText = "Hello there, I am Bharati. Welcome to my space!";  
+const w = window.matchMedia("(min-width: 990px)");
 
-$(document).ready(() => {
+function loadIntroHead(e) {
+    typeChars(introText);
 
+}
 
-    var i = 0;
-    var w = window.matchMedia("(min-width: 768px)");
-    var txt = 'Hello there, I am Bharati. Welcome to my space!';
-    var speed = 50;
-    function typeWriter() {
-        if (i < txt.length) {
-            document.getElementById("intro-head").innerHTML += txt.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed);
-        }
-        else {
-            rep(w);
-            w.addListener(rep);
-        }
+function typeChars() {
+    if(i < introText.length) {
+        introHead.innerHTML+= introText.charAt(i);
+        i++;
+
+        setTimeout(typeChars, 100);
     }
-    function rep(w) {
-        if (w.matches) {
-            setTimeout(function () {
+    else {
+        
+        if(w.matches) {
+            setTimeout(() => {
+                introHead.innerHTML = "";
                 i = 0;
-                speed = 40;
-                document.getElementById("intro-head").innerHTML = '';
-                setTimeout(typeWriter, speed);
+                setTimeout(typeChars, 100);
             }, 5000);
         }
+        
     }
-    typeWriter();
-})
+}
