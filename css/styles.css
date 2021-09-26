@@ -474,9 +474,9 @@ section {
     width: 100px; 
     height: 100px;
     padding: 1rem;
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
     font-size: 3.5rem;
     text-align: center;
     
@@ -716,6 +716,8 @@ body.dark-theme .projects.container .card:hover {
         height: 70px;
         padding: 1rem; 
         font-size: 2rem;
+
+      
     }
     
 }
