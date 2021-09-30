@@ -461,7 +461,7 @@ section {
 }
 
 .skill-list-container .skill-list li.skill-list-item {
-    margin: 1.25rem 1rem;
+    margin: 1rem 0.75rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -471,14 +471,14 @@ section {
 
 .skill-list-container .skill-list li.skill-list-item span.skill-icon {
     display: block;
-    width: 100px; 
-    height: 100px;
+    width: 6.5rem; 
+    height: 6.5rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 3.5rem;
+    font-size: 3.25rem;
     text-align: center;
     
     border: 2px solid var(--light-theme-primary-color);
@@ -643,7 +643,6 @@ body.dark-theme .projects.container .card:hover {
 
 .projects.container .card .card-footer small.project-tech
 {
-    
     padding: 1rem;
     display: block;
     font-size: 0.75rem;
