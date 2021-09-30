@@ -471,20 +471,24 @@ section {
 
 .skill-list-container .skill-list li.skill-list-item span.skill-icon {
     display: block;
-    width: 6.5rem; 
-    height: 6.5rem;
+    width: 6rem; 
+    height: 6rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 3.25rem;
+    font-size: 3.5rem;
     text-align: center;
     
     border: 2px solid var(--light-theme-primary-color);
     border-radius: 50%;
     
     transition: background 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.5s ease-in-out;    
+}
+
+.skill-list-container .skill-list li.skill-list-item span.skill-icon.skill-sass {
+    font-size: 3.25rem;
 }
 
 .skill-list-container .skill-list li.skill-list-item span.skill-title {
