@@ -1,9 +1,9 @@
 const toggleCheckbox = document.querySelector('.theme-toggle');
 
-let theme = localStorage.getItem('theme');
+let theme = localStorage.getItem('bharati-portfolio-theme');
 if(theme === null || theme === null) {
-    localStorage.setItem('theme', 'light-theme');
-    theme = localStorage.getItem('theme');
+    localStorage.setItem('bharati-portfolio-theme', 'light-theme');
+    theme = localStorage.getItem('bharati-portfolio-theme');
 }
 
 document.body.className = `${theme}`;
