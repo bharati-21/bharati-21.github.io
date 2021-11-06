@@ -18,14 +18,14 @@ else {
 toggleCheckbox.addEventListener('click', (e) => {
     if(e.target.checked) {
         console.log('checked');
-        localStorage.setItem('theme', 'dark-theme');
+        localStorage.setItem('bharati-portfolio-theme', 'dark-theme');
         
     }
     else {
         console.log('unchecked');
-        localStorage.setItem('theme', 'light-theme')
+        localStorage.setItem('bharati-portfolio-theme', 'light-theme')
     }
 
-    theme = localStorage.getItem('theme');
+    theme = localStorage.getItem('bharati-portfolio-theme');
     document.body.className = `${theme}`;
 });
