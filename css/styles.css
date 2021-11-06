@@ -628,8 +628,8 @@ body.dark-theme .skill-list-container .skill-list li.skill-list-item span.skill-
     top: 0;
     width: 0%;
     height: 0%;
-    border-top: 1px solid transparent;
-    border-right: 1px solid transparent;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
     transition: all 0.8s ease;
 }
 
@@ -651,8 +651,8 @@ body.light-theme .project-card:before {
     bottom: 0;
     width: 0%;
     height: 0%;
-    border-bottom: 1px solid transparent;
-    border-left: 1px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
     transition: all 0.7s ease;
     -webkit-transition: all 0.7s ease;
     -moz-transition: all 0.7s ease;
