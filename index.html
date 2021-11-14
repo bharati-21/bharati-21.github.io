@@ -18,7 +18,7 @@
         <div id="body-wrapper">
             <header class="header container">
                 <nav class="navbar flex-container flex-row justify-space-between align-center">
-                    <h1 class="logo flex-container flex-row justify-center align-center">BS</h1>
+                    <a  href="/" class="logo-link"><h1 class="logo flex-container flex-row justify-center align-center">BS</h1></a>
                     <button class="display-none navlinks-toggle">
                         <span class="hamburger"></span>
                     </button>
@@ -85,7 +85,7 @@
                             </p>
                             <div class="buttons-container flex-container justify-center align-start about-buttons">
                                 <a href="#skills" class="btn btn-primary">My Skills</a>
-                                <a href="" class="btn btn-secondary">Connect</a>
+                                <a href="#footer" class="btn btn-secondary">Connect <i class="fas fa-user-friends"></i></a>
                             </div>
                         </div>
                     </article>
@@ -191,8 +191,8 @@
                                 <em>An important lesson was that there is much more to developing applications that writing code!</em>
                             </p>
                             <div class="buttons-container flex-container justify-center align-start project-buttons">
-                                <a href="" class="btn btn-primary">My Projects</a>
-                                <a href="https://www.github.com/bharati-21" class="btn btn-secondary">Browse GitHub</a>
+                                <a href="./projects/" class="btn btn-primary">My Projects</a>
+                                <a href="https://www.github.com/bharati-21" class="btn btn-secondary">Browse GitHub <i class="fab fa-github"></i></a>
                             </div>
                         </div>
                     </article>                      
@@ -212,29 +212,44 @@
                                 have written over 5 blog posts on topics from HTML, CSS, and JavaScript. I am in the process of writing more blogs on topics from ReactJS as well!
                             </p>
                             <div class="buttons-container flex-container justify-center align-start project-buttons">
-                                <a href="" class="btn btn-primary">My Blog Posts</a>
-                                <a href="https://www.github.com/bharati-21" class="btn btn-secondary">Browse Dev</a>
+                                <a href="./blogs/" class="btn btn-primary">My Blog Posts</a>
+                                <a href="https://dev.to/bharati21" class="btn btn-secondary">Browse Dev <i class="fab fa-dev"></i></a>
                             </div>
                         </div>
                     </article>                      
                 </section>
             </main>
         </div>
-        <footer class="footer">
+        <footer class="footer container" id="footer">
             <div class="footer-container flex-container justify-space-between flex-row align-center">
-                <p class="flex-item author">Bharati Subramanian</p>
-                <ul class="social-links flex-container flex-row align-center">
+                <p class="flex-item author">
+                    <a href="/">Bharati Subramanian</a>
+                </p>
+                <ul class="social-links flex-container flex-row align-center justify-center">
                     <li class="flex-item social-link">
-                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/bharati-21">
+                           <i class="fab fa-github"></i>
+                        </a>
                     </li>
                     <li class="social-link">
-                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/bharati-subramanian-29734b152/">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
                     </li>
                     <li class="social-link">
-                        <i class="fab fa-twitter"></i>
+                        <a href="https://twitter.com/_girlwhocodes">
+                            <i class="fab fa-twitter"></i>
+                        </a>
                     </li>
                     <li class="social-link">
-                        <i class="fab fa-github"></i>
+                        <a href="https://dev.to/bharati21">
+                            <i class="fab fa-dev"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:bharatisharada@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
