@@ -55,6 +55,7 @@ ul {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 a.active-link {
@@ -138,6 +139,11 @@ body.dark-theme a.active-link {
     display: inline-block;
     font-weight: bold;
     font-size: 1rem;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
 }
 
 .btn-primary {
@@ -149,18 +155,6 @@ body.dark-theme a.active-link {
     background-color: var(--light-theme-secondary-color);
     color: var(--light-theme-primary-color);
 }
-
-.buttons-container {
-    margin-top: var(--space-2-5);
-    gap: var(--space-1);   
-    flex-wrap: wrap; 
-    justify-content: flex-start;
-}
-
-.buttons-container a {
-    margin: 0;
-}
-
 
 body.light-theme .btn-primary {
     background-color: var(--light-theme-primary-color);
@@ -182,6 +176,25 @@ body.dark-theme .btn-secondary {
     color: var(--dark-theme-primary-color);
 }
 
+body.light-theme .btn:hover {
+    opacity: 0.9;
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+
+.buttons-container {
+    margin-top: var(--space-2-5);
+    gap: var(--space-1);   
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+}
+
+.buttons-container a {
+    margin: 0;
+}
 
 .content {
     max-width: 100%;
@@ -605,11 +618,11 @@ body.dark-theme .skill-list li.skill-list-item span.skill-icon:hover {
 }
 
 .footer .social-links li:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px1.2);
+    -moz-transform: translateY(-5px1.2);
+    -ms-transform: translateY(-5px1.2);
+    -o-transform: translateY(-5px1.2);
 }
 
 .footer .social-links li:hover > * {
