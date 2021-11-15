@@ -62,9 +62,9 @@ ol.project-list-container {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .project-image img {
+    /* .project-image img {
         object-fit: cover;
         width: inherit;
         height: 40vh;
-    }
+    } */
 }
