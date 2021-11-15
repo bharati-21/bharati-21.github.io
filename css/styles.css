@@ -49,7 +49,7 @@ img {
     max-width: 100%;
 }
 
-ul, ol, .list-style-none {
+ul, .list-style-none {
     list-style: none;
 }
 
@@ -442,7 +442,7 @@ body.dark-theme .hero-text {
 
 .lead-text {
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-top: var(--space-1);
     font-weight: 600;
     background-color: var(--light-theme-accent-color);
@@ -982,12 +982,16 @@ body.dark-theme .footer {
 
 @media screen and (max-width: 500px) {
     .hero-text {
-        font-size: 2.25rem;
+        font-size: 2rem !important;
     }
 
     .lead-text {
-        font-size: 1rem;
+        font-size: 1.45rem;
         font-weight: 700;
+    }
+
+    .article-head {
+        font-size: 1.25rem;
     }
 
     .showcase-buttons {
