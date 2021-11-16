@@ -108,10 +108,10 @@ ol.project-list-container {
     margin-right: auto;
     padding-bottom: 0.25rem;
     transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    -ms-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
 }
 
 body.dark-theme .project-details .article-head {
@@ -123,7 +123,7 @@ body.light-theme .project-details .article-head {
 }
 
 .project-details .article-head:hover {
-    border: none;
+    border-bottom: none !important;
 }
 
 .project-details .btn {
