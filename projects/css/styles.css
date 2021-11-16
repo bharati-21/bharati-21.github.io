@@ -98,7 +98,32 @@ ol.project-list-container {
     max-width: 0 auto;
     border-radius: 0.5rem;
     font-family: var(--font-family-ternary);
+}
 
+.project-details .article-head {
+    font-weight: bold;
+    display: block;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0.25rem;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+body.dark-theme .project-details .article-head {
+    border-bottom: 3px solid var(--dark-theme-secondary-color);
+}
+
+body.light-theme .project-details .article-head {
+    border-bottom: 3px solid var(--light-theme-secondary-color);
+}
+
+.project-details .article-head:hover {
+    border: none;
 }
 
 .project-details .btn {
@@ -128,6 +153,8 @@ body.light-theme .project-learnings .lead-text {
     margin: var(--space-3) 0 var(--space-0-5);
     padding: 0.25rem;
 }
+
+
 
 .project-challenges li {
     margin: 0.75rem 0;
