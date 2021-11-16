@@ -29,7 +29,7 @@ ol.project-list-container {
     word-spacing: initial !important;
 }
 
-.project-list-container .project-image {
+.project-image {
     -webkit-border-radius: 0.5rem !important;
     -moz-border-radius: 0.5rem !important;
     -ms-border-radius: 0.5rem !important;
@@ -39,26 +39,31 @@ ol.project-list-container {
     overflow: hidden;
 }
 
-.project img {
-    /* border-radius: 0.5rem !important; */
+.project-image img {
     transition: transform 0.3s cubic-bezier(0.5, 0, 0.75, 1);
-    /*object-fit: cover;
-    */width: max-content;
+    border-radius: 0.5rem !important;
+    
+    width: max-content;
     width: 100%;
-    /*height: 300px;
-    width: 100%;
-    max-width: 100% ;
-    max-height: 500px;
-    */height: auto;
+    height: auto;
+
     -webkit-transition: transform 0.3s cubic-bezier(0.5, 0, 0.75, 1);
     -moz-transition: transform 0.3s cubic-bezier(0.5, 0, 0.75, 1);
     -ms-transition: transform 0.3s cubic-bezier(0.5, 0, 0.75, 1);
     -o-transition: transform 0.3s cubic-bezier(0.5, 0, 0.75, 1);
-    margin: var(--space-1) 0;
+
     -webkit-border-radius: 0.5rem !important;
     -moz-border-radius: 0.5rem !important;
     -ms-border-radius: 0.5rem !important;
     -o-border-radius: 0.5rem !important;
+
+    margin: var(--space-1) 0;
+
+    /*height: 300px;
+    width: 100%;
+    max-width: 100% ;
+    max-height: 500px;
+    */
 }
 
 .project-image img:hover {
@@ -69,9 +74,90 @@ ol.project-list-container {
     -o-transform: scale(1.05);
 }
 
+.project-description {
+    margin:  0 0 var(--space-1);
+}
+
+.project-description-container {
+    margin: var(--space-2) auto;
+    padding: var(--space-1) var(--space-2);
+}
+
+.project-details {
+    padding: var(--space-1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    place-items: start;
+    align-items: start;
+    
+    margin-bottom: var(--space-3);
+
+    gap: 2rem 0;
+    max-width: 100%;
+    max-width: 0 auto;
+    border-radius: 0.5rem;
+    font-family: var(--font-family-ternary);
+
+}
+
+.project-details .btn {
+    margin: 0;
+}
+
+.project-details i, .project-details a, .project-details li {
+    font-size: 0.9rem;
+}
+
+.projects-main .project-learnings .lead-text {
+    margin: var(--space-3) 0 var(--space-0-5);
+    background: transparent !important;
+    padding: 0 ;
+}
+
+body.dark-theme .project-learnings .lead-text {
+    color: var(--dark-theme-primary-color) !important;
+}
+
+body.light-theme .project-learnings .lead-text {
+    color: var(--light-theme-primary-color) !important;
+}
+
+.project-challenges .lead-text {
+    width: max-content;
+    margin: var(--space-3) 0 var(--space-0-5);
+    padding: 0.25rem;
+}
+
+.project-challenges li {
+    margin: 0.75rem 0;
+}
 
 @media screen and (max-width: 500px) {
     ol.project-list-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-details {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .project-details {
+        grid-template-columns: 1fr;
+        width: 100%;
+        text-align: center;
+    }
+
+    .project-details div {
+        width: inherit;
+    }
+
+    .project-description-container {
+        padding: 0;
     }
 }
