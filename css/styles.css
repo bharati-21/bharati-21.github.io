@@ -25,6 +25,8 @@
     --space-5: 5rem;
     --space-7: 7rem;
     --space-10: 10rem;
+    --space-12: 12rem;
+    --space-15: 15rem;
 }
 
 html {
@@ -481,8 +483,10 @@ main section {
 }
 
 .skills.container {
-    padding-top: var(--space-10);
-    padding-bottom: var(--space-10);
+    padding-top: var(--space-5);
+    padding-bottom: var(--space-5);
+    margin-top: var(--space-10);
+    margin-bottom: var(--space-10);
     width: 100%;
     min-height: max-content !important;
 }
