@@ -467,7 +467,7 @@ body.dark-theme .lead-text {
 
 .hero-image {
     grid-area: image;
-    height: 65vh;
+    height: 70vh;
     width: 65vh;
     object-fit: cover;
 }
