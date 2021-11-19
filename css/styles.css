@@ -206,12 +206,11 @@ body.dark-theme .btn-secondary {
 }
 
 .content .flex-item.text-content {
-    flex: 1.5;
     text-align: justify;
+    width: 100%;
 }
 
 .image-content {
-    flex: 1;
     width: 100%;
 }
 
@@ -231,7 +230,7 @@ body.dark-theme .btn-secondary {
 }
 
 .section-text {
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     line-height: 1.5;
 }
 
@@ -632,7 +631,7 @@ body.dark-theme .skill-list li.skill-list-item span.skill-icon:hover {
 }
 
 .footer p {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     margin: 0 var(--space-1-5);
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
@@ -659,7 +658,7 @@ body.light-theme .footer p:hover {
 }
 
 .footer .social-links li  i {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 }
 
 .footer .social-links li a, 
@@ -766,7 +765,7 @@ body.dark-theme .footer {
     .hero-image {
         grid-area: image;
         width: 100%;
-        height: 100%;
+        height: 60vh;
         object-fit: cover;
         margin-top: 2rem;
     }
@@ -787,7 +786,10 @@ body.dark-theme .footer {
         width: 100%;
     }
 
-    .flex-item.image-content img.about-image, 
+    .flex-item.image-content img.about-image {
+        height: 90vh;
+    }
+    
     .flex-item.image-content img.project-image,
     .flex-item.image-content img.blog-image {
         height: 70vh;
@@ -989,7 +991,7 @@ body.dark-theme .footer {
     }
 
     .lead-text {
-        font-size: 1.45rem;
+        font-size: 1.25rem;
         font-weight: 700;
     }
 
