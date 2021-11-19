@@ -486,10 +486,6 @@ main section {
 }
 
 .skills.container {
-    padding-top: var(--space-5);
-    padding-bottom: var(--space-5);
-    margin-top: var(--space-10);
-    margin-bottom: var(--space-10);
     width: 100%;
     min-height: max-content !important;
 }
