@@ -164,8 +164,18 @@ body.dark-theme .project-challenges .lead-text  {
     color: var(--dark-theme-background-color) !important;
 }
 
+.project-challenges ul {
+    list-style: outside square;
+    margin-left: 1rem;
+}
+
 .project-challenges li {
     margin: 0.75rem 0;
+    padding-left: 0.75rem;
+}
+
+.project-challenges li::marker {
+    color: var(--light-theme-accent-color);
 }
 
 @media screen and (max-width: 500px) {
