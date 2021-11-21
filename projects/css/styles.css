@@ -178,6 +178,18 @@ body.dark-theme .project-challenges .lead-text  {
     color: var(--light-theme-accent-color);
 }
 
+ol.triangles-menu-options {
+    margin-left: 3rem;
+    list-style: decimal outside;
+    margin-bottom: 2rem;
+}
+
+ol.triangles-menu-options li {
+    padding-left: 1rem;
+    margin: 0.5rem 0;
+    font-size: 0.85rem;
+}
+
 @media screen and (max-width: 500px) {
     ol.project-list-container {
         grid-template-columns: repeat(1, 1fr);
