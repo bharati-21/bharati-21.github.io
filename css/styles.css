@@ -238,6 +238,8 @@ body.dark-theme .btn:hover {
     font-size: 1.25rem;
     margin-top: var(--space-0-5);
     font-weight: 600;
+    background-color: var(--light-theme-accent-color);
+    color: #ffffff;
     padding: var(--space-0-25) var(--space-0-5);
 }
 
@@ -504,16 +506,13 @@ body.dark-theme .hero-text {
     border-color: var(--dark-theme-secondary-color);
 }
 
-body.light-theme .lead-text {
-    color: var(--light-theme-primary-color);
-}
-
-body.dark-theme .lead-text {
-    color: var(--dark-theme-primary-color)
-}
-
 .showcase-buttons {
     margin: var(--space-2) auto 0;
+}
+
+.showcase .lead-text {
+    background-color: unset;
+    color: inherit;
 }
 
 /* END OF SHOWCASE */
@@ -563,8 +562,6 @@ section.about .section-lead {
     font-weight: 500;
     
     text-transform: uppercase;
-    background-color: var(--dark-theme-accent-color);
-    color: #fff;
     margin-bottom: var(--space-2);
 }
 
