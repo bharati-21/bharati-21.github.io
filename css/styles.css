@@ -235,7 +235,7 @@ body.dark-theme .btn:hover {
 
 .lead-text {
     width: 100%;
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     margin-top: var(--space-0-5);
     font-weight: 600;
     background-color: var(--light-theme-accent-color);
@@ -279,7 +279,7 @@ body.dark-theme .btn:hover {
 }
 
 .section-text {
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
