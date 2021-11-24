@@ -33,10 +33,15 @@ body.dark-theme main.blogs-main ol.blog-list-container li:nth-child(even) .blog-
 
 
 .blog-post-container {
-    border-bottom: 2px solid #ccc;
     padding: 3rem 0;
     /* margin: 3rem 0;
     padding: 1rem; */
+    border-bottom: 2px solid #ccc;
+}
+
+body.dark-theme .blog-post-container {
+    
+    border-color: #202733;
 }
 
 ol.blog-list-container li:last-child .blog-post-container {
@@ -79,15 +84,12 @@ small.blog-tags span {
     -o-border-radius: 0.5rem;
 }
 
-.blog-image {
-}
-
 .blog-description.section-text {
     margin: 1.5rem 0 2rem !important;
 }
 
 .btn-blog-read-more {
-    font-size: 0.7rem !important;
+    font-size: 0.8rem !important;
     margin: 0 !important;
 }
 
