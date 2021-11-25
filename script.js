@@ -1,31 +1,50 @@
-const introHead = document.querySelector('.intro-head');
-document.addEventListener('DOMContentLoaded', loadIntroHead);
+const toggleCheckbox = document.querySelector('.theme-toggler');
+const themeToggle = document.querySelector('h1.theme-toggle');
+const navlinkToggle = document.querySelector('.navlinks-toggle');
+navlinkToggle.addEventListener('click', handleNavToggleClick);
+const navlinks = document.querySelectorAll('.navlinks li');
+let theme = localStorage.getItem('bharati-portfolio-theme');
 
-let i = 0;
-const introText = "Hello there, I am Bharati. Welcome to my space!";  
-const w = window.matchMedia("(min-width: 990px)");
 
-function loadIntroHead(e) {
-    typeChars(introText);
-
+if(theme === null || theme === null) {
+    localStorage.setItem('bharati-portfolio-theme', 'light-theme');
+    theme = localStorage.getItem('bharati-portfolio-theme');
 }
 
-function typeChars() {
-    if(i < introText.length) {
-        introHead.innerHTML+= introText.charAt(i);
-        i++;
+else if(theme === 'light-theme') {
+    toggleCheckbox.checked = false;
+    themeToggle.innerHTML = '<i class="fas fa-moon"></i>'
+}
+else {
+    toggleCheckbox.checked = true;
+    themeToggle.innerHTML = `<i class="fas fa-sun"></i>`;
+}
 
-        setTimeout(typeChars, 100);
+document.body.className = `${theme}`;
+
+toggleCheckbox.addEventListener('click', (e) => {
+    if(e.target.checked) {
+        localStorage.setItem('bharati-portfolio-theme', 'dark-theme');
+        themeToggle.innerHTML = `<i class="fas fa-sun"></i>`;
     }
     else {
-        
-        if(w.matches) {
-            setTimeout(() => {
-                introHead.innerHTML = "";
-                i = 0;
-                setTimeout(typeChars, 100);
-            }, 5000);
-        }
-        
+        localStorage.setItem('bharati-portfolio-theme', 'light-theme')
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i>'
     }
+
+    theme = localStorage.getItem('bharati-portfolio-theme');
+    document.body.className = `${theme}`;
+});
+
+
+navlinks.forEach(navlink => {
+    navlink.addEventListener('click', closeNavBar);
+});
+
+function closeNavBar() {
+    document.body.classList.remove('nav-open');
+}
+
+function handleNavToggleClick(e) {
+    document.body.classList.toggle('nav-open');
 }

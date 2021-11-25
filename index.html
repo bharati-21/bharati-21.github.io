@@ -1,584 +1,266 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Bharati Subramanian</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>Bharati Subramanian</title>
 
-<link
-    href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Dosis:wght@300&Chelsea+Market&family=Montaga&family=Tenali+Ramakrishna&family=Bitter&family=Jost&family=Chelsea+Market&family=PT+Sans&family=Noto+Sans+KR&family=Shadows+Into+Light&display=swap"
-    rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700&family=Ubuntu&display=swap" rel="stylesheet">
 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
-
-    <script src="https://kit.fontawesome.com/3583a0a0f8.js" crossorigin="anonymous"></script>
-
-    
-        
-  </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    
-    
-    <div class="head-main">
-        <header>    
-            <nav class="navbar navbar-expand-lg navbar-light bg-light static fixed-top">
-                <a class="navbar-brand headLink" href="/">BHARATI</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            
-                <div class="collapse navbar-collapse navbar-items" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto" id="navbar">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+        <link rel="shortcut icon" href="./images/favicon_io/favicon.ico" type="image/x-icon">
+    </head>
+    <body class="light-theme">
+        <div id="body-wrapper">
+            <header class="header container">
+                <nav class="navbar flex-container flex-row justify-space-between align-center">
+                    <a  href="/" class="logo-link"><h1 class="logo flex-container flex-row justify-center align-center">BS</h1></a>
+                    <button class="display-none navlinks-toggle">
+                        <span class="hamburger"></span>
+                    </button>
+                    <ul class="navlinks flex-container flex-row justify-center align-center">
+                        <li>
+                            <a href="/" class="active-link navlink">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact" >Contact me</a>
-                        </li>
-                    </ul>
-                
-                </div>
-            </nav>
-        </header>
-    </div>
-
-
-    <div id="intro" class="d-block mx-auto intro">
-        <div class="container">
-            <div class="row">
-                <div class="intro-img col-lg-4 stack mx-auto">
-                    <img class="img-fluid d-block mx-auto img-responsive" src="images/bharati.jpg">
-                </div>
-                <div class="col-lg-8 d-flex align-items-center justify-content-center intro-text">
-                    <p class="intro-head wrap" onload="typeWriter()" id="intro-head"></p>
-                </div>
-            </div>
-        </div>
-    </div>
-   
-    <div id="about" class="wrapper menu-item-container">
-        <div class="about">
-            <div class="image-area">
-                <img class="img-fluid rounded-circle mx-auto img-responsive" src="./images/bharati1.jpg">
-            </div>
-            <div class="about-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="about-text">
-                                <h1>Hello Friend!</h1>
-                                <h2 class="text-center" style="color:#48e0e4">I'm <b>Bharati Subramanian</b> - a simple, short, enthusiastic <strong>Front End Web Developer</strong>, who loves to translate theory to code. I believe that the best way to to develop programming skills is to get your hands dirty and start small. I aspire to become a Full Stack Web Developer, and also explore UI/ UX design in the future.
-                                <br /><br />
-                                I also love reading books and I have profound interests for English Literature and Music.             
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="connect">
-                <h1 class="my-5 text-center">Let's Connect!</h1>
-                <div class="container d-flex justify-content-center align-items-center my-3">
-            
-                    <a href="mailto:bharatisharada@gmail.com" class="google"><i class=" fa fa-google fa-2x"
-                                aria-hidden="true"></i></a>
-                
-                    <a href="https:/github.com/bharati-21" class="github" target="_blank"><i class="fa fa-github fa-2x"
-                                aria-hidden="true"></i></a>
-                
-                    <a href="https://www.linkedin.com/in/bharati-subramanian-29734b152/" target="_blank" class="linkedin"><i
-                                class="fab fa-linkedin-in fa-2x"></i></a>
-                
-                    <a href="https://twitter.com/_girlwhocodes" class="twitter" target="_blank"><i class="fa fa-twitter fa-2x"
-                                aria-hidden="true"></i></a>
-                
-                    <a href="https://dev.to/bharati21" class="dev-to"><i class="fab fa-dev fa-2x" aria-hidden="true"></i></a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-        <section id="skills" class="wrapper menu-item-container">
-            <div class="skills" >
-                <h1 class="text-center">MY <span style="color:#74d4c0">SKILLS</span></h1>
-                <div class="skill-list-container">
-                    <ul class="skill-list list-style-none">
-                        <li class="skill-list-item">
-                            <span class="skill-icon">
-                                <i class="fab fa-html5" title="HTML5"></i>
-                            </span>
-                            <span class="skill-title">HTML5</span>
-                        </li>
-                        <li class="skill-list-item">
-                            <span class="skill-icon">
-                                <i class="fab fa-css3-alt" title="CSS3"></i>
-                            </span>
-                            <span class="skill-title">CSS3</span>
-                        </li>
-                        <li class="skill-list-item">
-                            <span class="skill-icon">
-                                <i class="fab fa-sass" title="Sass"></i>
-                            </span>
-                            <span class="skill-title">Sass</span>
-                        </li>
-                        <li class="skill-list-item">
-                            <span class="skill-icon">
-                                <i class="fab fa-bootstrap" title="Bootstrap"></i>
-                            </span>
-                            <span class="skill-title">Bootstrap</span>
-                            
-                        </li>
-                        <li class="skill-list-item">
-                            <span class="skill-icon">
-                                <i class="fab fa-js-square" title="JavaScript"></i>
-
-                            </span>
-                            <span class="skill-title">JavaScript</span>
-                        </li>
-                        <li class="skill-list-item">
-                            <span class="skill-icon">
-                                <i class="fab fa-react" title="ReactJS"></i>
-                            </span>
-                            <span class="skill-title">ReactJS</span>
-                           
-                        </li>
-                        <li class="skill-list-item">
-                            <span class="skill-icon">
-                                <i class="fab fa-node-js" title="Node.js"></i>
-                            </span>
-                            <span class="skill-title">Node.js</span>
-                            
-                        </li>
-                        <li class="skill-list-item">
-                            <span class="skill-icon">
-                                <i class="fab fa-java" title="Java"></i>
-                            </span>
-                            <span class="skill-title">Java</span>
-                            
-                        </li>
-                        <li class="skill-list-item">
-                            <span class="skill-icon">
-                                <i class="fab fa-python" title="Python"></i>
-                            </span>
-                            <span class="skill-title">Python</span>
-                            
-                        </li>
-                        <li class="skill-list-item">
-                            <span class="skill-icon">
-                                <i class="fab fa-github" title="GitHub"></i>
-                            </span>
-                            <span class="skill-title">GitHub</span>
-                        </li>
-                        <li class="skill-list-item">
-                            <span class="skill-icon">
-                                <i class="fab fa-git-square" title="Git"></i>
-                            </span>
-                            <span class="skill-title">Git</span>
-                        </li>
-                        <li class="skill-list-item">
-                            <span class="skill-icon">
-                                <i class="fas fa-database" title="SQL"></i>
-                            </span>
-                            <span class="skill-title">SQL</span>
-                        </li>
-                    </ul>
-                    <p class="skills-others col-md-10 mx-auto px-3">A few other notable technologies I have worked with are: <span class="invert-secondary-color" title="Systems, Applications & Products in Data Processing">SAP</span>, <span class="invert-secondary-color">C</span>, <span class="invert-secondary-color">C++</span>, <span class="invert-secondary-color">C# and ASP.NET</span>, <span class="invert-secondary-color">JSP and Servlets</span>, <span class="invert-secondary-color">PHP</span>, <span class="invert-secondary-color">Azure ML</span>. My work with these technologies have been limited, and I am still a beginner. But I look forward to work in length with them in the future.</p>
-                </div>                                       
-            </div>
-        </section>
-
-        <section id="projects" class="wrapper menu-item-container">
-        
-            <div class="projects">
-                <h1 class="text-center projects-head">MY <span style="color : #ed8282">PROJECTS</span></h1>
-                <div class="projects-cards container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card-group">
-                                <div class="card">
-                                    <h1 class="card-head justify-content-center d-flex align-items-center">JAVASCRIPT PROJECT</h1>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Calculator App</h5>
-                                        
-                                        <p class="card-text pt-3">
-                                            A calculator app developed using JavaScript that allows users to evaluate simple mathematical expressions. Additional feature to toggle between dark and light theme.
-                                        </p>
-                                        <p class="card-text pt-2"><small class="text-muted"><b>Languages : </b>HTML, CSS, JavaScript, ReactJs</small></p>
-                                        <div class="project-links">
-                                            <a href="https://js-calculator-bharati.netlify.app/">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a>
-                                            <a href="https://github.com/bharati-21/javascript-calculator">
-                                                <i class="fab fa-github-square"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-group">
-                                <div class="card">
-                                    <h1 class="card-head justify-content-center d-flex align-items-center">PORTFOLIO PROJECT</h1>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Personal Portfolio</h5>
-                                        <p class="card-text pt-3">Personal porftolio that showcases my skills, projects, and experience. Developed to present an idea about what my interests are, domains I'm interested in, and what I'm upto currently!</p>
-                                        <p class="card-text pt-2"><small class="text-muted"><b>Languages: </b>HTML, CSS, JavaScript, Bootstrap</small></p>
-                                        <div class="project-links">
-                                            <a href="https://bharati-21.github.io/">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a>
-                                            <a href="https://github.com/bharati-21/bharati-21.github.io">
-                                                <i class="fab fa-github-square"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="projects-cards container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card-group">
-                                <div class="card">
-                                    <h1 class="card-head justify-content-center d-flex align-items-center">Node.js PROJECT</h1>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Command Line Quiz</h5>
-                                        <p class="text-danger"><em>Made at Neog.Camp with Tanay Pratap</em></p>
-                                        <p class="card-text pt-3">
-                                            A command line quiz application developed with the help of npm packages, that allows users to type answers for 10 MCQ questions. 
-                                        </p>
-                                        <p class="card-text pt-2"><small class="text-muted"><b>Languages: </b>HTML, CSS, JavaScript, ReactJs</small></p>
-                                        <div class="project-links">
-                                            <a href="https://replit.com/@bhaaratii/JS-Quiz?embed=1&output=1#README.md">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a>
-                                            <a href="https://github.com/bharati-21/JS-Quiz">
-                                                <i class="fab fa-github-square"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-group">
-                                <div class="card">
-                                    <h1 class="card-head justify-content-center d-flex align-items-center">REACT PROJECT</h1>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Play With Triangles</h5>
-                                        <p class="text-danger"><em>Made at Neog.Camp with Tanay Pratap</em></p>
-                                        <p class="card-text pt-3">An applcation developed using JavaScript that tests users knowledge on types, angles and area of triangles.</p>
-                                        <p class="card-text pt-2"><small class="text-muted"><b>Languages: </b>HTML, CSS, JavaScript</small></p>
-                                        <div class="project-links">
-                                            <a href="https://bharati-play-with-triangles.netlify.app/">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a>
-                                            <a href="https://github.com/bharati-21/play-with-triangles">
-                                                <i class="fab fa-github-square"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="projects-cards container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card-group">
-                                <div class="card">
-                                    <h1 class="card-head justify-content-center d-flex align-items-center">REACTJS PROJECT</h1>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Book Recommender</h5>
-                                        <p class="text-danger"><em>Made at Neog.Camp with Tanay Pratap</em></p>
-                                        <p class="card-text pt-3">
-                                            A web application that recommends users my top reads. The app shows books across genres with the cover, title, author, rating and a little description.
-                                        </p>
-                                        <p class="card-text pt-2"><small class="text-muted"><b>Languages: </b>HTML, CSS, JavaScript, ReactJs</small></p>
-                                        <div class="project-links">
-                                            <a href="https://bharati-book-recommender.netlify.app/">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a>
-                                            <a href="https://github.com/bharati-21/book-recommender">
-                                                <i class="fab fa-github-square"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-group">
-                                <div class="card">
-                                    <h1 class="card-head justify-content-center d-flex align-items-center">PORTFOLIO PROJECT</h1>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Portfolio II</h5>
-                                        <p class="text-danger"><em>Made at Neog.Camp with Tanay Pratap</em></p>
-                                        <p class="card-text pt-3">A portfolio created for <span class="text-success">Neog.Camp</span>, that showcases my projects developed during the bootcamp. It showcases my projects, blogs, and skills I learned during the camp.</p>
-                                        <p class="card-text pt-2"><small class="text-muted"><b>Languages: </b>HTML, CSS</small></p>
-                                        <div class="project-links">
-                                            <a href="https://bharati-portfolio.netlify.app/">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a>
-                                            <a href="https://github.com/bharati-21/bharati-portfolio">
-                                                <i class="fab fa-github-square"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="projects-cards container">
-                    <div class="row" style="margin-bottom: 0;">
-                        <div class="col-md-6">
-                            <div class="card-group">
-                                <div class="card">
-                                    <h1 class="card-head justify-content-center d-flex align-items-center">IoT PROJECT</h1>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Biometric Attendance System using IoT</h5>
-                                        <p class="card-text pt-3">An IoT based-  in-house, and offline- biometric attendance system developed using fingerprint sensor and Arduino with an interactive interface for the user developed using Windows forms</p>
-                                        <p class="card-text pt-2"><small class="text-muted"><b>Languages: </b>Arduino C, C#</small></p>
-                                        <div class="project-links">
-                                            <!-- <a href="https://replit.com/@bhaaratii/JS-Quiz?embed=1&output=1#README.md">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a> -->
-                                            <a href="https://github.com/bharati-21/Biometric-Attendance-System">
-                                                <i class="fab fa-github-square"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-group">
-                                <div class="card">
-                                    <h1 class="card-head justify-content-center d-flex align-items-center">JAVA PROJECT</h1>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Quiz Application</h5>
-                                        <p class="card-text pt-3">A Java console-based offline quiz application that randomly selects 10 MCQ questions and allows user to enter the correct answer for each of them. The quiz also has multiplayer mode where 2 players challenege each other.</p>
-                                        <p class="card-text pt-2"><small class="text-muted"><b>Languages used : </b>Java</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="projects-cards container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card-group">
-                                <div class="card">
-                                    <h1 class="card-head justify-content-center d-flex align-items-center">REACTJS PROJECT</h1>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Weather Application</h5>
-                                        <p class="card-text pt-3">A weather application that allows users to check the current temperature and other weather highlights. The real-time data is fetched from an API, and user is additionally presented with weather details of next five days.</p>
-                                        <p class="card-text pt-2"><small class="text-muted"><b>Languages: </b>HTML, CSS, JavaScript, ReactJs</small></p>
-                                        <div class="project-links">
-                                            <!-- <a href="https://replit.com/@bhaaratii/JS-Quiz?embed=1&output=1#README.md">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a> -->
-                                            <a href="https://github.com/bharati-21/react-weather-app">
-                                                <i class="fab fa-github-square"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-group">
-                                <div class="card">
-                                    <h1 class="card-head justify-content-center d-flex align-items-center">JAVASCRIPT PROJECT</h1>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Pomodoro Timer Application</h5>
-                                        <p class="card-text pt-3">A pomodoro web application where user can set timer to complete tasks. User can start, pause, and stop the timer. The default time for the timer is 25 minutes, but user can increase or decrease the minutes.</p>
-                                        <p class="card-text pt-2"><small class="text-muted"><b>Languages: </b>HTML, CSS, JavaScript</small></p>
-                                        <div class="project-links">
-                                            <a href="https://bharati-pomodoro-timer.netlify.app/">
-                                                <i class="fas fa-external-link-alt"></i>
-                                            </a>
-                                            <a href="https://github.com/bharati-21/Pomodoro-JS">
-                                                <i class="fab fa-github-square"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- <section id="education" class="wrapper menu-item-container">
-            <div class="container d-block mx-auto education">
-                <div class="page-header">
-                    <h1 class="text-center edu-head">EDUCATION</h1>
-                </div>
-                <ul class="timeline d-block mx-auto">
-                    <li>
-                        <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h3>Bachelor of Computer Applications
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Stella Maris College, Chennai, 2017-2020</small></p></h3>
-                            </div>
-                            <div class="timeline-body">
-                                
-                                <p style="margin-bottom : 15px;"><b>I am currently pursuing final year BCA from Stella Maris College, Chennai affliated to Univeristy of Madras. The follwing are the major subjects : </b>
-                                    <span style="font-size : 15px; color: #d7ecf3">Data Structures and Algorithms, Operating Systems, Full Stack Web development, Adobe Photoshop and Adobe Flash, Mobile Application Development, and Programming Courses</span></p>
-                                <p style="margin-bottom : 15px;"><b class="timeline-body-head">CGPA :</b> 9.03</p>
-                                <p><b class="timeline-body-head">Achievements :</b><br>
-                                    <ol>
-                                        <li style="margin-left: 40px;">Awarded General Proficiency for best academic performance continuously for all 3 years (2018, 2019 and 2020)
-                                        </li>
-                                        <li style="margin-left: 40px;">Awarded Best outgoing student of Computer Science Department, Stella Maris College for the year 2020
-                                        </li>
-                                    </ol>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
-                        <div class="timeline-panel timeline-panel1">
-                            <div class="timeline-heading timeline-heading1">
-                                <h3>Higher Secondary Schooling
-                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Kendriya Vidyalaya INS Hamla, Mumbai, 2015-2017</small></p>
-                                </h3>
-                            </div>
-                            <div class="timeline-body timeline-body1">
-                                <p style="margin-bottom : 15px;"><b>I completed my higher Secondary schooling from K.V. INS Hamla, affiliated to Central Board of Secondary Education with the following major subjects :</b>
-                                    <span style="font-size : 15px; color: #f0ddc3">Pysics, Chemistry, Mathematics, Computer Science and English</span></p>
-                                    <p style="margin-bottom : 15px;"><b class="timeline-body-head">Percentage :</b> 91.4%</p>
-                                </div>
-                            </div>
+                        <!-- <li>
+                            <a href="#about" class="navlink">About</a>
+                        </li> -->
+                        <li>
+                          <a href="./projects/" class="navlink">Projects</a>
                         </li>
                         <li>
-                            <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
-                            <div class="timeline-panel timeline-panel2">
-                                <div class="timeline-heading timeline-heading2">
-                                    <h3>Secondary Schooling
-                                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Kendriya Vidyalaya INS Hamla, Mumbai,
-                                            2010-2015</small></p>
-                                    </h3>
-                                </div>
-                                <div class="timeline-body timeline-body2">
-                                    <p style="margin-bottom : 15px;"><b>I completed my Secondary schooling from K.V. INS Hamla, affiliated to
-                                            Central Board of Secondary Education with the following major subjects :</b>
-                                        <span style="font-size : 15px; color: #c7eec7">Science, Mathematics, Social Science, Sanskrit, Hindi and
-                                            English</span></p>
-                                    <p style="margin-bottom : 15px;"><b class="timeline-body-head">CGPA :</b> 9.6</p>
-                                </div>
-                                </div>
-                            </div>
+                            <a href="./blogs/" class="navlink">Blogs</a>
                         </li>
-                        
                     </ul>
-                </div>
+                    <label class="theme-toggler" for="theme-checkbox">
+                        <input type="checkbox" name="theme-checkbox" id="theme-checkbox">
+                        <h1 class="theme-toggle flex-container flex-row justify-center align-center">
+                            <i class="fas fa-moon"></i>
+                        <!-- <i class="fas fa-sun"></i> -->
+                        </h1>
+                    </label>
+                </nav>
+                <section class="showcase flex-container justify-center align-center flex-column">
+                    <img src="./images/bharati1.jpg" alt="Picture of Bharati Smiling with palm on her cheek" class="hero-image">  
+                    <article class="text-content flex-container flex-column align-start justify-center">
+                        <h1 class="hero-text">
+                            Hi, I am
+                            <strong class="hero-name">Bharati Subramanian</strong>
+                        </h1>
+                        <p class="lead-text">
+                            I build responsive, scalable, and user-friendly apps.
+                        </p>
+                        <div class="buttons-container showcase-buttons flex-container align-center justify-center">
+                            <a href="#" class="btn btn-primary">Download Resume</a>
+                            <a href="#about" class="btn btn-secondary">About Me</a>
+                        </div>
+                    </article>
+                </section>
+            </header>
+            <main class="main">
+                <section class="about container flex-container flex-column align-center justify-center" id="about">
+                    <article class="about-container">
+                        <h2 class="section-head">About me</h2>
+                        <p class="section-lead lead-text">Front-End Developer</p>
+                        <img src="./images/bharati.jpg" alt="Picture of Bharati smiling" class="section-image">
+                        <p class="section-text">
+                            I'm a Computer Applications graduate working as an Associate Analyst at Deloitte. <br />
+                            I aspire to become a full-stack developer and am currently exploring and building applications using HTML, CSS, JavaScript, and ReactJS.
+                            <br/><br />
 
-            
-        </section> -->
-    
+                            I also enjoy problem-solving and have invested quite some time to strengthen my ability in the domain. I've explored techniques to choose the best possible data structures and apply algorithms for solving problems on coding platforms such as LeetCode.
+                            I enjoy web designing and would love to learn and gain experience in UI/UX designing too.
+                            <br/><br />
+                            Apart from tech, you will see me reading books, singing, or drinking coffee and tea!
+                        </p>
+                    </article>
+                </section>
+                <section id="skills" class="skills container flex-container flex-column align-center justify-center">
+                    <h2 class="section-head">Skills</h2>
+                    <article class="skills-container  flex-container justify-center align-center">
+                        <ul class="skill-list">
+                            <li class="skill-list-item">
+                                <span class="skill-icon">
+                                    <i class="fab fa-html5" title="HTML5"></i>
+                                </span>
+                                <span class="skill-title">HTML5</span>
+                            </li>
+                            <li class="skill-list-item">
+                                <span class="skill-icon">
+                                    <i class="fab fa-css3-alt" title="CSS3"></i>
+                                </span>
+                                <span class="skill-title">CSS3</span>
+                            </li>
+                            <li class="skill-list-item">
+                                <span class="skill-icon skill-sass">
+                                    <i class="fab fa-sass" title="Sass"></i>
+                                </span>
+                                <span class="skill-title">Sass</span>
+                            </li>
+                            <li class="skill-list-item">
+                                <span class="skill-icon">
+                                    <i class="fab fa-bootstrap" title="Bootstrap"></i>
+                                </span>
+                                <span class="skill-title">Bootstrap</span>
+                                
+                            </li>
+                            <li class="skill-list-item">
+                                <span class="skill-icon">
+                                    <i class="fab fa-js-square" title="JavaScript"></i>
 
-        <section id="contact" class="wrapper menu-item-container">
-            <div class="contact">
-                <div class="container contact-container">
-                    <h1 class="text-center contact-head">CONTACT <span style="color:#74d4c0">ME</span></h1>
-
-                    <div class="contact-me-container">
-                        <!-- <h1 class="text-center">I would love to hear from you!</h1>
-                        <h2 class="text-info text-center">Feel free to reach out and get in touch with me :D</h2> -->
-                        <div class="contact-details">
-                            <!-- <div class="container contact-details-container">
-                                <div class="row pb-4">
-                                    <div class="col-md-4 text-center mx-auto">
-                                        <h3 class="my-5">Email me at</h3>
-                                        <ul class="list-unstyled mb-0">
-                                            <li><i class="fas fa-envelope fa-2x"></i>
-                                                <p>bharatisharada@gmail.com</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <div class="connect contact-connect p-2">
-                                <h1 class="m-0 p-0 text-center">Let's Connect!</h1>
-                                <div class="container d-block my-2 text-center">
-
-                                    <div class="row mt-5">
-                                        <div class="col-md-3">
-                                            <p>Github : <a href="https:/github.com/bharati-21" class="github" target="_blank"><i class="fa fa-github fa-2x"
-                                                        aria-hidden="true"></i></a></p>
-                                        </div>
-
-                                        <div class="col-md-3">
-                                            <p>LinkedIn : <a href="https://www.linkedin.com/in/bharati-subramanian-29734b152/" target="_blank" class="linkedin"><i
-                                                class="fab fa-linkedin-in fa-2x"></i></a></p>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <p>Twitter<a href="https://twitter.com/_girlwhocodes" class="twitter" target="_blank"><i class="fa fa-twitter fa-2x"
-                                                    aria-hidden="true"></i></a></p>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <p>Dev.to : <a href="https://dev.to/bharati21" target="_blank" class="dev-to"><i class="fab fa-dev fa-2x" aria-hidden="true"></i></a></p>
-                                        </div>
-                                    </div> 
-                                </div>
+                                </span>
+                                <span class="skill-title">JavaScript</span>
+                            </li>
+                            <li class="skill-list-item">
+                                <span class="skill-icon react-icon">
+                                    <i class="fab fa-react" title="ReactJS"></i>
+                                </span>
+                                <span class="skill-title">ReactJS</span> 
+                            </li>
+                            <li class="skill-list-item">
+                                <span class="skill-icon">
+                                    <i class="fab fa-node-js" title="Node.js"></i>
+                                </span>
+                                <span class="skill-title">Node.js</span>
+                                
+                            </li>
+                            <li class="skill-list-item">
+                                <span class="skill-icon">
+                                    <i class="fab fa-java" title="Java"></i>
+                                </span>
+                                <span class="skill-title">Java</span>
+                                
+                            </li>
+                            <li class="skill-list-item">
+                                <span class="skill-icon">
+                                    <i class="fab fa-python" title="Python"></i>
+                                </span>
+                                <span class="skill-title">Python</span>
+                                
+                            </li>
+                            <li class="skill-list-item">
+                                <span class="skill-icon">
+                                    <i class="fab fa-github" title="GitHub"></i>
+                                </span>
+                                <span class="skill-title">GitHub</span>
+                            </li>
+                            <li class="skill-list-item">
+                                <span class="skill-icon">
+                                    <i class="fab fa-git-square" title="Git"></i>
+                                </span>
+                                <span class="skill-title">Git</span>
+                            </li>
+                            <li class="skill-list-item">
+                                <span class="skill-icon">
+                                    <i class="fas fa-database" title="SQL"></i>
+                                </span>
+                                <span class="skill-title">SQL</span>
+                            </li>
+                        </ul>
+                    </article>
+                    <p class="skills-others section-text">A few other notable technologies I have worked with are: <span title="Systems, Applications & Products in Data Processing">SAP</span>, <span>C</span>, <span>C++</span>, <span>C# and ASP.NET</span>, <span>JSP and Servlets</span>, <span>PHP</span>, <span>Azure ML</span>. My work with these technologies have been limited, and I am still a beginner. But I look forward to work in length with them in the future.</p>
+                </section>
+                <section class="projects container" id="projects">
+                    <h2 class="section-head">Projects</h2>  
+                    <article class="content flex-container flex-row-reverse align-center justify-center">
+                        <div class="flex-item image-content">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1960&q=200" alt="" class="project-image">
+                        </div>
+                        <div class="flex-item text-content">
+                            <p class="section-text">
+                                I love to build and develop challenging, new applications. The best means to become better at programming is by developing applications that translate theory into something live and working. In addition, this practice also adds to confidence, enhances code quality, and encourages documenting your journey.
+                                <br /><br />
+                                I'm currently improving my HTML, CSS, JavaScript, and ReactJS skills by developing front-end applications.
+                            </p>
+                            <div class="buttons-container flex-container justify-center align-start project-buttons">
+                                <a href="./projects/" class="btn btn-primary">My Projects</a>
+                                <a href="https://www.github.com/bharati-21" class="btn btn-secondary">Browse GitHub <i class="fab fa-github"></i></a>
                             </div>
                         </div>
-
-                        <h1 class="text-center my-5 text-danger">Thank you for visiting. <br>It was great to have you in my space!</h1>
-                    </div>
-
-                </div>    
+                    </article>                      
+                </section>
+                <section class="blogs container" id="blogs">
+                    <h2 class="section-head">Blogs</h2>  
+                    <article class="content flex-container flex-row align-center justify-center">
+                        <div class="flex-item image-content">
+                            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=200" alt="" class="blog-image">
+                        </div>
+                        <div class="flex-item text-content">
+                            <p class="section-text">
+                                I also try to document my journey and learnings through blog posts. I often try to write blog posts on topics that I find difficult to grasp. The writing process allows me to work on my presentation skills and filter content to highlight only the relevant concepts.
+                                <br /><br />
+                                Blog writing, I feel, is the classic case of "learning by teaching"! The abundance of research behind a blog post adds to a tremendous amount of knowledge and learning how to convert thoughts, theory, and knowledge into describable words.
+                            </p>
+                            <div class="buttons-container flex-container justify-center align-start project-buttons">
+                                <a href="./blogs/" class="btn btn-primary">My Blog Posts</a>
+                                <a href="https://dev.to/bharati21" class="btn btn-secondary">Browse Dev <i class="fab fa-dev"></i></a>
+                            </div>
+                        </div>
+                    </article>                      
+                </section>
+            </main>
+        </div>
+        <footer class="footer container" id="footer">
+            <div class="footer-container flex-container justify-space-between flex-row align-center">
+                <p class="flex-item author">
+                    <a href="/">Bharati Subramanian</a>
+                </p>
+                <ul class="social-links flex-container flex-row align-center justify-center">
+                    <li class="flex-item social-link">
+                        <a href="https://github.com/bharati-21" target="_blank">
+                           <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="social-link">
+                        <a href="https://www.linkedin.com/in/bharati-subramanian-29734b152/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="social-link">
+                        <a href="https://twitter.com/_girlwhocodes" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-link">
+                        <a href="https://dev.to/bharati21" target="_blank">
+                            <i class="fab fa-dev"></i>
+                        </a>
+                    </li>  
+                    <li>
+                        <a href="mailto:bharatisharada@gmail.com" target="_blank">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+              </ul>
             </div>
-        </section>
-    
-    
-    
+        </footer>
 
-     
-
-
-
-    
-
-    
-        
-    
-     
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-
-   </body>
+        <script src="./script.js"></script>
+    </body>
 </html>
+
+
+<!-- <br />
+    Developing applications taught me the importance of writing clean code,structuring files, tracking code, and breaking down a problem into sub problems. <br/>
+    <em>An important lesson was that there is much more to developing applications that writing code!</em> 
+-->
+
+<!-- <br/><br/>
+    have written over 5 blog posts on topics from HTML, CSS, and JavaScript. I am in the process of writing more blogs on topics from ReactJS as well! 
+-->
+
+<!-- <p class="section-text">
+    I'm a Computer Applications graduate working as an Associate Analyst at Deloitte.
+    <br/><br/>
+    As a front-end developer, I'm exploring and building applications with HTML, CSS, JavaScript, ReactJS, and aspire to be a full-stack developer. 
+    
+    I enjoy problem solving, and have invested time to strenghten my ability to choose the best data strcutures, and apply algorithms for solving problems on coding platforms such as LeetCode.
+
+    <br><br />
+    Apart from tech, you will see me reading books, singing, or drinking coffee and tea!
+</p> -->
