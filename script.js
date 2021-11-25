@@ -28,7 +28,6 @@ toggleCheckbox.addEventListener('click', (e) => {
         themeToggle.innerHTML = `<i class="fas fa-sun"></i>`;
     }
     else {
-        console.log('unchecked');
         localStorage.setItem('bharati-portfolio-theme', 'light-theme')
         themeToggle.innerHTML = '<i class="fas fa-moon"></i>'
     }

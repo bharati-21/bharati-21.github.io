@@ -321,7 +321,7 @@ body.dark-theme {
     max-width: 1000px;
     height: 100%;
     margin: auto;
-
+  
     overflow: hidden;
 }
 
@@ -910,7 +910,9 @@ body.dark-theme .footer {
     }
 }
 
-/* END OF MEDIA MAX WIDTH 550px */
+/* END OF MEDIA MAX WIDTH 769px */
+
+/* START OF MEDIA MAX WIDTH 550px */
 
 @media screen and (max-width: 550px) {
     ul.navlinks {
@@ -1007,7 +1009,7 @@ body.dark-theme .footer {
         -moz-transform: translateY(0);
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
-}
+    }
 
     .nav-open .navlinks-toggle {
         /* top: 2.5rem; */
