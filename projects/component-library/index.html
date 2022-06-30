@@ -8,9 +8,10 @@
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
 
-		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="/css/styles.css" />
 		<link rel="stylesheet" href="../css/styles.css" />
-		<title>Blogs | Bharati</title>
+
+		<title>Bharati Subramanian | Projects</title>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -52,16 +53,13 @@
 						<li>
 							<a href="/" class="navlink">Home</a>
 						</li>
-						<!-- <li>
-                            <a href="#about" class="navlink">About</a>
-                        </li> -->
 						<li>
-							<a href="/projects/" class="navlink">Projects</a>
+							<a href="/projects/" class="active-link navlink"
+								>Projects</a
+							>
 						</li>
 						<li>
-							<a href="/blogs/" class="active-link navlink"
-								>Blogs</a
-							>
+							<a href="/blogs/" class="navlink">Blogs</a>
 						</li>
 					</ul>
 					<label class="theme-toggler" for="theme-checkbox">
@@ -78,58 +76,88 @@
 					</label>
 				</nav>
 			</header>
-			<main class="blogs-main main">
-				<section class="blogs container" id="blogs">
-					<h1 class="hero-text text-center">My Blogs</h1>
-					<ol class="list-style-none blog-list-container" reversed>
-						<li class="blog-post">
-							<div class="blog-post-container">
-								<h2 class="lead-text">Memoization In React</h2>
-								<small class="blog-tags">
-									<span>React</span>
-									<span>Optimization</span>
-									<span>Memoization</span>
-								</small>
-								<img
-									class="blog-image"
-									src="https://bharati.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1653031690712%2FAZcLpemco.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75"
-								/>
-								<p class="section-text blog-description">
-									Techniques to optimize react application
-									using memoization...
-								</p>
-								<div class="blog-post-details">
-									<div class="post-info">
-										<p class="blog-reading-time">
-											<i class="fa-solid fa-calendar"></i>
-											5/22/2022
-										</p>
-										<p class="blog-reading-time">
-											<i class="fa-solid fa-clock"></i>
-											15 Minutes
-										</p>
-										<p class="blog-reading-time">
-											<i
-												class="fa-solid fa-thumbs-up"
-											></i>
-											49
-										</p>
-										<p class="blog-reading-time">
-											<i class="fa-solid fa-comment"></i>
-											6
-										</p>
-									</div>
-									<a
-										href="https://bharati.hashnode.dev/memoization-in-react"
-										target="_blank"
-										class="btn btn-primary btn-blog-read-more"
-										>Read More
-										<i class="fa-solid fa-chevron-right"></i
-									></a>
-								</div>
+			<main class="projects-main main">
+				<section
+					class="projects container project-main-description"
+					id="projects"
+				>
+					<h1 class="hero-text">
+						<strong> Elixir UI- Component Library </strong>
+					</h1>
+					<article class="project-description-container">
+						<p class="section-text project-description">
+							Elixir UI is a component library with well
+							documented 10+ ready to use components along with
+							additional JavaScript code you can use in your
+							projects. It includes various utility classes for
+							margin, padding, etc to ease your UI development.
+							Elixir UI helps developers to focus on logic rather
+							than design development, thus driving project
+							development faster.
+						</p>
+						<div class="project-image">
+							<img src="../images/component-library.PNG" alt="" />
+						</div>
+						<div class="project-details">
+							<div class="project-techstack">
+								<h2 class="article-head">Tech Stack</h2>
+								<ul>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JavaScript</li>
+								</ul>
 							</div>
-						</li>
-					</ol>
+							<div class="project-live-link">
+								<h2 class="article-head">Project Live</h2>
+								<a
+									href="https://elixir-ui.netlify.app/"
+									target="_blank"
+									class="btn btn-primary project-live-link"
+								>
+									<i
+										class="fa-solid fa-external-link-alt"
+									></i>
+								</a>
+							</div>
+							<div class="project-repo-link">
+								<h2 class="article-head">Project Repository</h2>
+								<a
+									href="https://github.com/bharati-21/elixir-ui"
+									target="_blank"
+									class="btn btn-secondary project-github-link"
+								>
+									<i class="fa-brands fa-github"></i>
+								</a>
+							</div>
+						</div>
+						<div class="project-learnings">
+							<h2 class="lead-text">Project Learnings</h2>
+							<p class="section-text">
+								My key takeaway was how to make reusable
+								components that have same templates for the
+								different varities of the same component
+							</p>
+						</div>
+						<div class="project-challenges">
+							<h2 class="lead-text">Project Challenges</h2>
+							<ul class="section-text">
+								<li>
+									Keeping in mind that users can choose their
+									own themes and add spaces according to their
+									preferences. Hence, created utility classes
+									for adding spaces to their apps and allowed
+									users to customize them. Moreover, the
+									components are designed to be flexible and
+									independent of themes chosen.
+								</li>
+								<li>
+									Maintaining and curating a well documented
+									interface for users to use components,
+									utilities and code.
+								</li>
+							</ul>
+						</div>
+					</article>
 				</section>
 			</main>
 		</div>
@@ -181,7 +209,6 @@
 			</div>
 		</footer>
 
-		<script src="./fetch-blogs.js"></script>
-		<script src="../script.js"></script>
+		<script src="/script.js"></script>
 	</body>
 </html>
