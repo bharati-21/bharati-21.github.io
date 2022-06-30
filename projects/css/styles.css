@@ -1,74 +1,73 @@
 .header.container {
-    min-height: max-content;
+	min-height: max-content;
 }
 
 section.projects {
-    margin-top: var(--space-1);
+	margin-top: var(--space-1);
 }
 
 section.projects h1.hero-text {
-    padding-bottom: var(--space-0-5);
-    border-bottom: 5px solid var(--light-theme-accent-color);
+	padding-bottom: var(--space-0-5);
+	border-bottom: 5px solid var(--light-theme-accent-color);
 }
 
 ol.project-list-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit ,minmax(400px, 1fr));
-    gap: 2rem 3rem;
-    margin: var(--space-3) 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	gap: 2rem 3rem;
+	margin: var(--space-3) 0;
 }
 
 .project {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 ol.project-list-container .lead-text {
-    background-color: transparent !important;
-    text-transform: capitalize;
-    color: inherit !important;
-    margin-bottom: var(--space-0-25);
+	background-color: transparent !important;
+	text-transform: capitalize;
+	color: inherit !important;
+	margin-bottom: var(--space-0-25);
 }
 
 .project-image {
-    -webkit-border-radius: 0.5rem !important;
-    -moz-border-radius: 0.5rem !important;
-    -ms-border-radius: 0.5rem !important;
-    -o-border-radius: 0.5rem !important;
-    border-radius: 0.5rem !important;
+	-webkit-border-radius: 0.5rem !important;
+	-moz-border-radius: 0.5rem !important;
+	-ms-border-radius: 0.5rem !important;
+	-o-border-radius: 0.5rem !important;
+	border-radius: 0.5rem !important;
 
-    overflow: hidden;
+	overflow: hidden;
 
-    box-shadow: 0.25em 0.7em 0.75em rgba(0,0,0,0.25),
-    0.125em 0.125em 0.25em rgba(0,0,0,0.15);
-
+	box-shadow: 0.25em 0.7em 0.75em rgba(0, 0, 0, 0.25),
+		0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
 .project-image img {
-    transition: transform 0.3s cubic-bezier(0.5, 0, 0.75, 1);
-    border-radius: 0.5rem !important;
-    
-    width: max-content;
-    width: 100%;
-    height: auto;
+	transition: transform 0.3s cubic-bezier(0.5, 0, 0.75, 1);
+	border-radius: 0.5rem !important;
 
-    -webkit-transition: transform 0.3s cubic-bezier(0.5, 0, 0.75, 1);
-    -moz-transition: transform 0.3s cubic-bezier(0.5, 0, 0.75, 1);
-    -ms-transition: transform 0.3s cubic-bezier(0.5, 0, 0.75, 1);
-    -o-transition: transform 0.3s cubic-bezier(0.5, 0, 0.75, 1);
+	width: max-content;
+	width: 100%;
+	height: auto;
 
-    -webkit-border-radius: 0.5rem !important;
-    -moz-border-radius: 0.5rem !important;
-    -ms-border-radius: 0.5rem !important;
-    -o-border-radius: 0.5rem !important;
+	-webkit-transition: transform 0.3s cubic-bezier(0.5, 0, 0.75, 1);
+	-moz-transition: transform 0.3s cubic-bezier(0.5, 0, 0.75, 1);
+	-ms-transition: transform 0.3s cubic-bezier(0.5, 0, 0.75, 1);
+	-o-transition: transform 0.3s cubic-bezier(0.5, 0, 0.75, 1);
+
+	-webkit-border-radius: 0.5rem !important;
+	-moz-border-radius: 0.5rem !important;
+	-ms-border-radius: 0.5rem !important;
+	-o-border-radius: 0.5rem !important;
 }
 
 .project-image img:hover {
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
+	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
 }
 
 /* END OF PROJECT/ INDEX.HTML */
@@ -76,131 +75,136 @@ ol.project-list-container .lead-text {
 /* START OF INDIVIDUAL PROJECT'S PAGE */
 
 .project-description {
-    margin:  0 0 var(--space-1);
+	margin: 0 0 var(--space-1);
 }
 
 .project-description-container {
-    margin: var(--space-2) auto;
-    padding: var(--space-1) var(--space-0-75);
+	margin: var(--space-2) auto;
+	padding: var(--space-1) var(--space-0-75);
 }
 
 .project-details {
-    padding: var(--space-1);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+	padding: var(--space-1);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 
-    place-items: start;
-    align-items: start;
-    
-    margin-bottom: var(--space-3);
+	place-items: start;
+	align-items: start;
 
-    gap: 2rem 0;
-    max-width: 100%;
-    max-width: 0 auto;
-    border-radius: 0.5rem;
-    font-family: var(--font-family-ternary);
+	margin-bottom: var(--space-3);
+
+	gap: 2rem 0;
+	max-width: 100%;
+	max-width: 0 auto;
+	border-radius: 0.5rem;
+	font-family: var(--font-family-ternary);
 }
 
 .project-details .article-head {
-    font-weight: bold;
-    display: block;
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 0.25rem;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
+	font-weight: bold;
+	display: block;
+	width: max-content;
+	padding-bottom: 0.25rem;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
 }
 
-body.dark-theme  .article-head {
-    border-bottom: 3px solid var(--dark-theme-secondary-color);
+body.dark-theme .article-head {
+	border-bottom: 3px solid var(--dark-theme-secondary-color);
 }
 
-body.light-theme  .article-head {
-    border-bottom: 3px solid var(--light-theme-secondary-color);
+body.light-theme .article-head {
+	border-bottom: 3px solid var(--light-theme-secondary-color);
 }
 
 .project-details .article-head:hover {
-    border-bottom: none !important;
+	border-bottom: none !important;
 }
 
 .project-details .btn {
-    margin: 0;
+	margin: 0;
 }
 
-.project-details i, .project-details a, .project-details li {
-    font-size: 0.9rem;
+.project-details i,
+.project-details a,
+.project-details li {
+	font-size: 0.9rem;
 }
 
 .projects-main .project-learnings .lead-text {
-    margin: var(--space-3) 0 var(--space-0-5);
-    background: transparent !important;
-    padding: 0 ;
-    color: inherit;
+	margin: var(--space-3) 0 var(--space-0-5);
+	background: transparent !important;
+	padding: 0;
+	color: inherit;
 }
 
 .project-challenges .lead-text {
-    max-width: max-content;
-    margin: var(--space-3) 0 var(--space-0-5);
-    padding: 0.25rem;
-    word-wrap: break-word;
+	max-width: max-content;
+	margin: var(--space-3) 0 var(--space-0-5);
+	padding: 0.25rem;
+	word-wrap: break-word;
 }
 
 .project-challenges ul {
-    margin-left: var(--space-2);
-    margin-top: var(--space-1);
+	margin-left: var(--space-2);
+	margin-top: var(--space-1);
 }
 
 .project-challenges li {
-    margin: var(--space-0-25) 0;
-    padding-left: var(--space-0-5);
-    list-style-type: square;
+	margin: var(--space-0-25) 0;
+	padding-left: var(--space-0-5);
+	list-style-type: square;
 }
 
 .project-challenges li::marker {
-    color: var(--light-theme-accent-color);
+	color: var(--light-theme-accent-color);
 }
 
 ol.triangles-menu-options {
-    margin-left: 3rem;
-    list-style: decimal outside;
-    margin-bottom: 2rem;
+	margin-left: 3rem;
+	list-style: decimal outside;
+	margin-bottom: 2rem;
 }
 
 ol.triangles-menu-options li {
-    padding-left: 1rem;
-    margin: 0.5rem 0;
-    font-size: 0.85rem;
+	padding-left: 1rem;
+	margin: 0.5rem 0;
+	font-size: 0.85rem;
 }
 
 @media screen and (max-width: 500px) {
-    ol.project-list-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
+	ol.project-list-container {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
 
 @media screen and (max-width: 768px) {
-    .project-details {
-        width: 100%;
-        grid-template-columns: repeat(2, 1fr);
-    }
+	.project-details {
+		width: 100%;
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 @media screen and (max-width: 550px) {
-    .project-details {
-        grid-template-columns: 1fr;
-        width: 100%;
-        text-align: center;
-    }
+	.project-details {
+		grid-template-columns: 1fr;
+		width: 100%;
+		text-align: center;
+	}
 
-    .project-details div {
-        width: inherit;
-    }
+	.project-details .article-head {
+		margin-left: auto;
+		margin-right: auto;
+	}
 
-    .project-description-container {
-        padding: 0;
-    }
+	.project-details div {
+		width: inherit;
+	}
+
+	.project-description-container {
+		padding: 0;
+	}
 }

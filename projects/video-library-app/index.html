@@ -21,17 +21,15 @@
 		/>
 
 		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-			crossorigin="anonymous"
-		/>
-
-		<link
 			rel="shortcut icon"
 			href="/images/favicon_io/favicon.ico"
 			type="image/x-icon"
 		/>
+
+		<script
+			src="https://kit.fontawesome.com/8af1815f18.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body class="light-theme">
 		<div id="body-wrapper">
@@ -83,37 +81,61 @@
 					class="projects container project-main-description"
 					id="projects"
 				>
-					<h1 class="hero-text text-center">
-						<strong> My Todo List </strong>
+					<h1 class="hero-text">
+						<strong>StreamTunes- Video Libray App </strong>
 					</h1>
 					<article class="project-description-container">
 						<p class="section-text project-description">
-							My to-do list allows users to add, edit, delete and
-							set tasks for the day. Additionally, users can also
-							choose to complete the tasks by clicking the
-							<i class="fa-solid fa-check-circle"></i> icon. As a
-							design feature, users can toggle between light and
-							dark modes as well. Other functionality includes-
-							filtering and clearing to-dos from the list. The
-							to-do list items are stored so that users don't lose
-							out on their tasks and progress!
+							StreamTunes is a single page, video library app for
+							users to jam, listen to and watch their favorite
+							tunes and songs. Users can explore the listed videos
+							and filter them based on their category or sort
+							videos based on upload date. The explore page has a
+							rich user experience with infinite loader. Users can
+							also search for videos by their names which has been
+							enhanced by debouncing technique. Users can create,
+							add/ remove videos to or delete playlists. History,
+							liked videos and watch later management is also
+							included in the app. Additionally, users can toggle
+							between dark and light themes giving them a rich
+							experience.
 						</p>
 						<div class="project-image">
-							<img src="../images/todp-app.PNG" alt="" />
+							<img
+								src="../images/stream-tunes-video-lib-app.PNG"
+								alt="StreamTunes video library app"
+							/>
 						</div>
 						<div class="project-details">
 							<div class="project-techstack">
 								<h2 class="article-head">Tech Stack</h2>
 								<ul>
-									<li>HTML</li>
-									<li>CSS</li>
-									<li>JavaScript</li>
+									<li>React</li>
+									<li>React Router DOM v6</li>
+									<li>
+										<a
+											href="https://elixir-ui.netlify.app/"
+											target="_blank"
+											class="secondary-color"
+											>Elixir UI component library</a
+										>
+									</li>
+									<li>
+										Mock backend with
+										<a
+											href="https://mockbee.netlify.app/"
+											target="_blank"
+											class="secondary-color"
+											>mockBee</a
+										>
+									</li>
+									<li>React Toastify</li>
 								</ul>
 							</div>
 							<div class="project-live-link">
 								<h2 class="article-head">Project Live</h2>
 								<a
-									href="https://javascript-my-todo-list.netlify.app/"
+									href="https://stream-tunes.netlify.app/"
 									target="_blank"
 									class="btn btn-primary project-live-link"
 								>
@@ -125,7 +147,7 @@
 							<div class="project-repo-link">
 								<h2 class="article-head">Project Repository</h2>
 								<a
-									href="https://github.com/bharati-21/javascript-todo"
+									href="https://github.com/bharati-21/stream-tunes/"
 									target="_blank"
 									class="btn btn-secondary project-github-link"
 								>
@@ -136,32 +158,18 @@
 						<div class="project-learnings">
 							<h2 class="lead-text">Project Learnings</h2>
 							<p class="section-text">
-								The major takeaway from this project was
-								<strong
-									>splitting the problems into
-									sub-problems</strong
-								>. And using the subproblems to build a
-								complete, working to-do list from all the
-								components. Event delegation was another concept
-								I got to learn and use in this project.
-								Managing, adding, clearing local storage was
-								learning.
+								Debouncing, and frontend infinite loading using
+								IntersectionObserver was a key takeaway.
 							</p>
 						</div>
 						<div class="project-challenges">
 							<h2 class="lead-text">Project Challenges</h2>
 							<ul class="section-text">
 								<li>
-									Designing the overall application was
-									incredibly challenging. Taking into account
-									responsiveness across all devices was one of
-									the major goals for this project.
-								</li>
-								<li>
-									Editing a previously added to-do item was
-									another challenge. More so, to change the
-									same to-do item from the local storage as
-									well.
+									Updating the history of watched videos when
+									a video already in history is re-watched.
+									Edited the backend controllers for history
+									management to improve experience.
 								</li>
 							</ul>
 						</div>
