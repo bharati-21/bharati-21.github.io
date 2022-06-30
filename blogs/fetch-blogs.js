@@ -8,7 +8,6 @@ fetch(url)
 	});
 
 function updateBlogs(blogs) {
-	console.log(blogs);
 	blogContainer.innerHTML += blogs
 		.map((post) => {
 			return `<li class="blog-post">
