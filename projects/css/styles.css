@@ -136,9 +136,9 @@ body.light-theme .article-head {
 
 .projects-main .project-learnings .lead-text {
 	margin: var(--space-3) 0 var(--space-0-5);
-	background: transparent !important;
-	padding: 0;
-	color: inherit;
+	background: green;
+	padding: 0.25rem;
+    max-width: max-content;
 }
 
 .project-challenges .lead-text {
@@ -148,18 +148,21 @@ body.light-theme .article-head {
 	word-wrap: break-word;
 }
 
-.project-challenges ul {
+.project-challenges ul,
+.project-learnings ul {
 	margin-left: var(--space-2);
 	margin-top: var(--space-1);
 }
 
-.project-challenges li {
+.project-challenges li,
+.project-learnings li {
 	margin: var(--space-0-25) 0;
 	padding-left: var(--space-0-5);
 	list-style-type: square;
 }
 
-.project-challenges li::marker {
+.project-challenges li::marker,
+.project-learnings li::marker {
 	color: var(--light-theme-accent-color);
 }
 
@@ -173,6 +176,10 @@ ol.triangles-menu-options li {
 	padding-left: 1rem;
 	margin: 0.5rem 0;
 	font-size: 0.85rem;
+}
+
+.project-repo-link .article-subhead {
+    margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 500px) {
